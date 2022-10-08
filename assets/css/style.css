@@ -87,8 +87,11 @@ html{
 #slider {
     position: relative;
     margin-top: 46.5px;
+    
+}
+.slider-img{
     padding-top: 50%;
-    background: url('/assets/img/slider/slider1.jpg') top center /cover no-repeat;
+
 }
 #slider .slider-text{
     position: absolute;
