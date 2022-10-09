@@ -340,7 +340,7 @@ html{
 }
 .section-img{
     padding-top: 56%;
-    background: url('/assets/img/street_view/map.jpg') top center /cover no-repeat;
+    background: url('./assets/img/street_view/map.jpg') top center /cover no-repeat;
 }
 .body-footer {
     padding: 64px 16px;
