@@ -87,12 +87,13 @@ html{
 #slider {
     position: relative;
     margin-top: 46.5px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider1.jpg') top center /cover no-repeat;
     
 }
-.slider-img{
-    padding-top: 50%;
 
-}
+
+
 #slider .slider-text{
     position: absolute;
     bottom: 0;
@@ -339,7 +340,7 @@ html{
 }
 .section-img{
     padding-top: 56%;
-    background: url('/assets/img/slider/slider1.jpg') top center /cover no-repeat;
+    background: url('/assets/img/street_view/map.jpg') top center /cover no-repeat;
 }
 .body-footer {
     padding: 64px 16px;
