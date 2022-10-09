@@ -24,7 +24,6 @@ html{
     left:0;
     right: 0;
     z-index: 1;
-
 }
 #nav {
     display: inline-block;
@@ -38,7 +37,6 @@ html{
     box-shadow: 0 0 12px rgba(0,0,0,0.5);
 }
 #nav li{
-   
     position: relative;
 }
 #nav li:hover .subnav{
@@ -50,8 +48,6 @@ html{
 #nav li a{
     text-decoration: none;
     line-height: 46.5px;
-    
-   
 }
 .subnav li a{
     color:#000;
@@ -89,10 +85,7 @@ html{
     margin-top: 46.5px;
     padding-top: 50%;
     background: url('/assets/img/slider/slider2.jpg') top center /cover no-repeat;
-    
 }
-
-
 
 #slider .slider-text{
     position: absolute;
@@ -101,7 +94,6 @@ html{
     transform: translateX(-50%);
     text-align: center;
     padding: 32px 16px;
-
 }
 
 #slider .slider-heading{
