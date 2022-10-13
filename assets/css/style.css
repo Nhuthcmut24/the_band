@@ -6,14 +6,76 @@
 #main {
 
 }
+.contact-frame::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.input-name-mail::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.contact-name-mail::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+.contact-message::after{
+    content: "";
+    display: block;
+    clear:both;
+
+}
+.contact-section::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.text-center{
+    text-align: center !important;
+}
 .text-white{
     color:#fff !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col {
+    float: left;
+    padding: 0 8px;
+}
+.col-half {
+    width: 50%;
+}
+.col-third {
+    width: 33.3333%;
+}
+.col-full{
+    width: 100%;
 }
 .clear{
     clear:both;
 }
+.more-btn{
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 46.5px;
+    position: relative;
+    padding: 0 24px;
+}
+.more-btn:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
 html{
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 #header {
@@ -32,9 +94,13 @@ html{
     display: none;
     background-color: #fff;
     position: absolute;
+    left: 0;
     list-style-type: none;
     min-width: 160px;
     box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+.more-btn li a{
+    text-transform: none;
 }
 #nav li{
     position: relative;
@@ -114,6 +180,7 @@ html{
 
 
 #content {
+  
 
 }
 
@@ -153,12 +220,7 @@ html{
 #content .member-band{
     padding: 32px 0;
 }
-.member-band .member-list {
-    float:left;
-    width: 33.3333%;
-    text-align: center;
 
-}
 
 .member-band .member-name {
     margin: 15px 0;
@@ -205,18 +267,9 @@ html{
 }
 .tour-place {
     padding: 32px 0;
-    margin-left: -8px;
-    margin-right: -8px;
-  
-
 }
 
-.place-list {
-    float: left;
-    width: 33.3333%;
-    padding: 0 8px;
 
-}
 
 .place-body {
     background-color: #fff;
@@ -258,77 +311,14 @@ html{
     background-color: #000;
     display: inline-block;
     padding: 8px 16px;
+    border: none;
 }
 .book-ticket-tour:hover{
     color: #000;
     background-color: #ccc;
     cursor: pointer;
 }
-.contact-information{
-    font-size: 18px;
-    float: left;
-    line-height: 1.6;
-    display: inline-block;
-    width: 50%;
-}
-.contact-information span{
-    padding-left: 16px;
-}
 
-
-.contact-frame{
-    padding: 32px 0;
-}
-.contact-information i{
-    width:30px ;
-    height:18px ;
-}
-.input-information{
-    display: inline-block;
-    width: 50%;
-}
-.input-information input {
-    padding: 8px ;
-}
-.heading-input{
-    
-}
-.name-frame{
-    display: inline-block;
-    width: 49%;
-}
-.name-frame input{
-    width: 100%;
-}
-
-.email-frame{
-    display: inline-block;
-    width: 49%;
-    float: right;
-}
-.email-frame input {
-    width: 100%;
-}
-.message-frame{
-    padding: 8px 0;
-}
-.message-frame input {
-    width: 100%;
-}
-.send-btn {
-    float:right;
-    background-color: #000;
-    color: #fff;
-    padding: 8px 12px;
-}
-.send-btn:hover{
-    color:#000;
-    background-color: #ccc;
-    cursor: pointer;
-}
-.section-img{
-  
-}
 .map-jpg{
     width: 100%;
 }
@@ -352,6 +342,154 @@ html{
     cursor: pointer;
 }
 
-#footer {
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal-container{
+    background-color: #fff;
+    position: relative;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    animation: tradein ease 0.5s ;
+    
+}
+.modal-close{
+    color:#fff;
+    position: absolute;
+    top:0;
+    right: 0;
+    font-size: 16px;
+    padding: 12px;
+}
+.modal-close:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.modal-heading{
+    background-color: #009688;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #fff;
+   
+}
+.modal-header{
+    padding: 47px 0;
+}
+.modal-body input{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 10px;
+    width: 100%;
+}
+.modal-body{
+    padding: 16px;
+    font: 15px;
+}
+.modal-label {
+    margin: 15px 0;
+    
+}
+.modal-btn{
+    width: 100%;
+    color: #fff;
+    background-color: #009688;
+    font-weight: 600;
+    padding: 17px;
 
 }
+.modal-btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+    font-weight: 450;
+    
+}
+.modal-footer{
+    text-align: right;
+    padding: 16px;
+}
+.modal-footer a{
+    color: #2196F3;
+}
+.modal.open {
+    display: flex;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i {
+    width: 30px;
+    
+}
+.input-control{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  
+}
+
+.send-btn{
+    float: right;
+    color: #fff;
+    background-color: #000;
+    margin-top: 16px;
+    padding: 9px 15px;
+    border: none;
+}
+.send-btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.contact-section{
+    margin-top: 48px;
+    
+}
+.map-section {
+    position: relative;
+    height: auto;
+}
+.map-section img {
+    width: 100%;
+    filter:grayscale(50%);
+    vertical-align: middle;
+    
+    
+
+}
+#footer {
+    background-color: #f1f1f1;
+
+}
+
+
+
+@keyframes tradein {
+    from{
+        transform: translateY(-220px);
+        opacity: 0;
+
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+
